@@ -1,6 +1,6 @@
 <?php
 $subject = 'New Contact Message'; // Subject of your email
-$to = 'contact@designesia.com';  // Recipient's email
+$to = 'bikesh07stha@gmail.com';  // Recipient's email
 
 // Collect form data safely
 $name   = isset($_POST['name']) ? trim($_POST['name']) : '';
