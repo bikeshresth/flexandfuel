@@ -1,5 +1,5 @@
  /* --------------------------------------------------
-  * © Copyright 2026 - Caffino by Designesia
+  * © Copyright 2026 - Flex & Fuel
   * --------------------------------------------------*/
 (function($) {
     'use strict';
