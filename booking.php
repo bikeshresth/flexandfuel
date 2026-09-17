@@ -1,6 +1,6 @@
 <?php
 
-$to = "contact@designesia.com";
+$to = "bikesh07stha@gmail.com";
 $subject = "New Table Reservation";
 
 // Collect form data
