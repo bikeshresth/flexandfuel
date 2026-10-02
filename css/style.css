@@ -10878,7 +10878,7 @@ width: auto;
 
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 9px;
 
     padding: 13px 18px;
 
@@ -10888,7 +10888,7 @@ width: auto;
     border-radius: 50px;
     text-decoration: none;
 
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 600;
 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
@@ -10897,7 +10897,7 @@ width: auto;
 }
 
 .whatsapp-float i {
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .whatsapp-float:hover {
