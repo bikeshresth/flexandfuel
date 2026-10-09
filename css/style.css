@@ -10263,7 +10263,7 @@ width: 100%;
 display: block;
 }
 .dark-scheme header.header-mobile #mainmenu li {
-border-bottom-color: rgba(255, 255, 255, .1);
+border-bottom-color: rgba(32, 69, 72, 1);
 }
 header.header-mobile #mainmenu li ul.mega ul {
 height: auto;
