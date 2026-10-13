@@ -10920,3 +10920,88 @@ width: auto;
         font-size: 18px;
     }
 }
+/* Container & Alignment fixes */
+.drink-menu-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Category Collapse Header Buttons */
+.category-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    background: linear-gradient(135deg, #124e54 0%, #0d383c 100%);
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+    background: linear-gradient(135deg, #165d64 0%, #10464b 100%);
+    cursor: pointer;
+}
+
+/* Category Title Accent Color & Original Font */
+.category-title {
+    margin-bottom: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Category Badge Styling */
+.category-badge {
+    background-color: #ff6b00;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+}
+
+/* Menu Item Card Styling */
+.menu-card {
+    height: 100%;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    background-color: #f8f9fa;
+}
+
+.price-text {
+    color: #212529;
+    margin-bottom: 0.25rem;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Add-ons Card Styling */
+.addons-card {
+    height: 100%;
+    position: relative;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 40px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    background: linear-gradient(135deg, #124e54 0%, #0d383c 100%);
+    border-top: 4px solid #ff6b00;
+}
+
+.addons-title {
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #ff6b00;
+}
+
+.addons-divider {
+    background-color: #ff6b00;
+    height: 2px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
