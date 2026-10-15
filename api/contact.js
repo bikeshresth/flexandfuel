@@ -48,7 +48,7 @@ module.exports = async function handler(req, res) {
   try {
     const { data, error } = await resend.emails.send({
       from: "Flex & Fuel Website <onboarding@resend.dev>",
-      to: ["bikesh07stha@gmail.com"],
+      to: ["bikesh17stha@gmail.com"],
       replyTo: cleanEmail,
       subject: "New Contact Message - Flex & Fuel",
       text:
