@@ -433,5 +433,63 @@ document.addEventListener('DOMContentLoaded', function () {
 <script src="js/SplitText.min.js"></script>
 <script src="js/custom-gsap.js"></script>
 
+<!-- Contact form popup -->
+<div id="successPopup" style="
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #173B3A;
+    color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 10px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+    z-index: 99999;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    max-width: 320px;
+">
+    <span style="color: #F28C28; margin-right: 8px;">✓</span>
+    Your message has been sent successfully!
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact_form");
+    const popup = document.getElementById("successPopup");
+
+    if (!form || !popup) return;
+
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                body: new URLSearchParams(new FormData(form)),
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                }
+            });
+
+            const result = (await response.text()).trim();
+
+            if (response.ok && result === "sent") {
+                popup.style.display = "block";
+                form.reset();
+
+                setTimeout(function () {
+                    popup.style.display = "none";
+                }, 4000);
+            } else {
+                alert("Sorry, your message could not be sent. Please try again.");
+            }
+        } catch (error) {
+            alert("Unable to send your message. Please try again.");
+        }
+    });
+});
+</script>
+
 </body>
 </html>
