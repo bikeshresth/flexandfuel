@@ -114,7 +114,7 @@ module.exports = async function handler(req, res) {
 
               <!-- LOGO -->
               <img
-                src="/images/logo-white.webp"
+                src="images/icon.png"
                 alt="Flex &amp; Fuel Logo"
                 width="150"
                 style="display:block;width:150px;max-width:100%;height:auto;margin:0 auto 22px;border:0;"
