@@ -11,5 +11,7 @@
   "description": "",
   "dependencies": {
     "resend": "^6.33.0"
+    
   }
+  
 }

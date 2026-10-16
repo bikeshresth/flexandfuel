@@ -146,70 +146,50 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">                        
-                        <div id="masonry">
-                            <div class="grid-sizer"></div>
-                            <div class="item s-50 interior">
-                                <a href="images/gallery/1.webp" class="image-popup d-block hover">
-                                    <div class="relative overflow-hidden">
-                                        <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white">
-                                            View
-                                        </div>
-                                        <div class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1"></div>
-                                        <img src="images/gallery/1.webp" class="w-100 hover-scale-1-2" alt="">
-                                    </div>
-                                </a>
-                            </div>
+                        
+<div id="masonry">
+    <div class="grid-sizer">
+            <script>
+document.addEventListener("DOMContentLoaded", function () {
 
-                            <div class="item s-25 interior">
-                                <a href="images/gallery/2.webp" class="image-popup d-block hover">
-                                    <div class="relative overflow-hidden">
-                                        <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white">
-                                            View
-                                        </div>
-                                        <div class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1"></div>
-                                        <img src="images/gallery/2.webp" class="w-100 hover-scale-1-2" alt="">
-                                    </div>
-                                </a>
-                            </div>
+    const gallery = document.getElementById("masonry");
 
-                            <div class="item s-25 interior">
-                                <a href="images/gallery/3.webp" class="image-popup d-block hover">
-                                    <div class="relative overflow-hidden">
-                                        <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white">
-                                            View
-                                        </div>
-                                        <div class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1"></div>
-                                        <img src="images/gallery/3.webp" class="w-100 hover-scale-1-2" alt="">
-                                    </div>
-                                </a>
-                            </div>
+    // Generate gallery images automatically
+    for (let i = 1; i <= 15; i++) {
 
-                            <div class="item s-25 interior">
-                                <a href="images/gallery/4.webp" class="image-popup d-block hover">
-                                    <div class="relative overflow-hidden">
-                                        <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white">
-                                            View
-                                        </div>
-                                        <div class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1"></div>
-                                        <img src="images/gallery/4.webp" class="w-100 hover-scale-1-2" alt="">
-                                    </div>
-                                </a>
-                            </div>
+        const sizeClass = i === 1 ? "s-50" : "s-25";
 
-                            <div class="item s-25 interior">
-                                <a href="images/gallery/5.webp" class="image-popup d-block hover">
-                                    <div class="relative overflow-hidden">
-                                        <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white">
-                                            View
-                                        </div>
-                                        <div class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1"></div>
-                                        <img src="images/gallery/5.webp" class="w-100 hover-scale-1-2" alt="">
-                                    </div>
-                                </a>
-                            </div>
+        gallery.insertAdjacentHTML("beforeend", `
+            <div class="item ${sizeClass} interior">
+                <a href="images/gallery/${i}.webp"
+                   class="image-popup d-block hover">
 
+                    <div class="relative overflow-hidden">
+
+                        <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white">
+                            View
                         </div>
 
+                        <div class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1"></div>
+
+                        <img
+                            src="images/gallery/${i}.webp"
+                            class="w-100 hover-scale-1-2"
+                            alt="Gallery image ${i}"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
+                    </div>
+                </a>
+            </div>
+        `);
+    }
+});
+</script>
+
+    </div>
+</div>
                     </div>
                 </div>
             </div>
