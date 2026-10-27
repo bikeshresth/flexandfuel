@@ -112,20 +112,6 @@ module.exports = async function handler(req, res) {
             <td align="center"
               style="background-color:#173B3A;padding:34px 24px;">
 
-              <!-- LOGO -->
-            <img
-  src="/images/icon.png"
-  alt="Flex & Fuel Logo"
-  width={150}
-  style={{
-    display: "block",
-    width: "150px",
-    maxWidth: "100%",
-    height: "auto",
-    margin: "0 auto 22px",
-    border: 0,
-  }}
-/>
 
               <p style="margin:0 0 10px;color:#F28C28;font-size:11px;letter-spacing:4px;text-transform:uppercase;">
                 FLEX &amp; FUEL
