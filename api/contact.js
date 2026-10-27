@@ -272,7 +272,7 @@ module.exports = async function handler(req, res) {
               </p>
 
               <p style="margin:0 0 12px;color:#D96D12;font-size:12px;letter-spacing:1px;">
-                ENJOY THE SIP
+                Family owned since day one
               </p>
 
               <p style="margin:0;color:#7B857F;font-size:11px;line-height:1.8;">
