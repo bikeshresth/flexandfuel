@@ -67,7 +67,7 @@ module.exports = async function handler(req, res) {
       from: "Flex & Fuel Website <onboarding@resend.dev>",
 
       // Testing recipient permitted by your current Resend setup
-      to: ["bikesh17stha@gmail.com"],
+      to: ["flexandfuelpeakhurst@gmail.com"],
 
       // Replies go to the customer who submitted the form
       replyTo: cleanEmail,
@@ -112,6 +112,7 @@ module.exports = async function handler(req, res) {
             <td align="center"
               style="background-color:#173B3A;padding:34px 24px;">
 
+           
 
               <p style="margin:0 0 10px;color:#F28C28;font-size:11px;letter-spacing:4px;text-transform:uppercase;">
                 FLEX &amp; FUEL
@@ -272,7 +273,7 @@ module.exports = async function handler(req, res) {
               </p>
 
               <p style="margin:0 0 12px;color:#D96D12;font-size:12px;letter-spacing:1px;">
-                Family owned since day one
+                ENJOY THE SIP
               </p>
 
               <p style="margin:0;color:#7B857F;font-size:11px;line-height:1.8;">
