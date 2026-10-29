@@ -11016,3 +11016,58 @@ width: auto;
     position: relative;
     z-index: 10;
 }
+
+/* ========================================
+   FLEX AND FUEL - GALLERY LOAD MORE BUTTON
+   ======================================== */
+
+.gallery-load-more-wrap {
+    width: 100%;
+    display: block;
+    clear: both;
+    text-align: center;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+.gallery-load-more-btn {
+    display: inline-block;
+    padding: 12px 32px;
+    margin: 0;
+    border: 1px solid #f58220;
+    border-radius: 4px;
+    background-color: #f58220;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.gallery-load-more-btn:hover {
+    background-color: #dd6b12;
+    border-color: #dd6b12;
+    color: #ffffff;
+}
+
+.gallery-load-more-btn:focus-visible {
+    outline: 2px solid #f58220;
+    outline-offset: 4px;
+}
+
+.gallery-load-more-btn:active {
+    transform: translateY(1px);
+}
+
+.gallery-load-more-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

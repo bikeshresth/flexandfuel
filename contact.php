@@ -60,7 +60,7 @@
 // // Email headers
 // $headers  = "MIME-Version: 1.0\r\n";
 // $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-// $headers .= "From: Flex & Fuel <info@flexandfuel.com.au>\r\n";
+// $headers .= "From: Flex & Fuel <flexandfuelpeakhurst@gmail.com>\r\n";
 // $headers .= "Reply-To: {$email}\r\n";
 
 // // Send email
