@@ -11071,3 +11071,512 @@ width: auto;
     opacity: 0.6;
     cursor: not-allowed;
 }
+
+/*
+=========================================================
+ FLEX & FUEL CAFE
+ SERVICES PAGE CUSTOM CSS
+ File: style.csss
+=========================================================
+*/
+
+
+/* =========================================
+   SERVICES SECTION
+========================================= */
+
+.ff-services-section {
+    width: 100%;
+    padding: 10px 0 90px;
+    background: #ffffff;
+}
+
+
+/* =========================================
+   SERVICES GRID
+   Desktop: 3 cards per row
+========================================= */
+
+.ff-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
+}
+
+
+/* =========================================
+   SERVICE CARD
+========================================= */
+
+.ff-service-card {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #d8c7ad;
+    border-radius: 8px;
+
+    box-shadow: 0 5px 18px rgba(40, 32, 22, 0.045);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+/* Card hover */
+
+.ff-service-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #b88a55;
+
+    box-shadow: 0 13px 28px rgba(40, 32, 22, 0.11);
+}
+
+
+/* =========================================
+   CARD IMAGE
+========================================= */
+
+.ff-service-image {
+    width: 100%;
+    height: 220px;
+
+    overflow: hidden;
+
+    background: #f3eee7;
+}
+
+.ff-service-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.45s ease;
+}
+
+
+/* Image hover */
+
+.ff-service-card:hover .ff-service-image img {
+    transform: scale(1.045);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.ff-service-content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 27px 26px 29px;
+}
+
+
+/* Small subtitle */
+
+.ff-service-kicker {
+    margin: 0 0 11px;
+
+    color: #b88a55;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    line-height: 1.4;
+    letter-spacing: 1.35px;
+
+    text-transform: uppercase;
+}
+
+
+/* Card heading */
+
+.ff-service-content h3 {
+    width: 100%;
+    min-height: 58px;
+
+    margin: 0 0 13px;
+
+    color: #292929;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    line-height: 1.32;
+}
+
+
+/* Card paragraph */
+
+.ff-service-content p {
+    margin: 0;
+
+    color: #666666;
+
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+
+/* =========================================
+   CARD LINK
+========================================= */
+
+.ff-service-link {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 9px;
+
+    margin-top: auto;
+    padding-top: 19px;
+
+    color: #292929;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.ff-service-link span {
+    color: #b88a55;
+
+    font-size: 19px;
+    line-height: 1;
+
+    transition: transform 0.2s ease;
+}
+
+.ff-service-link:hover {
+    color: #b88a55;
+}
+
+.ff-service-link:hover span {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   TABLET
+   2 cards per row
+========================================= */
+
+@media (max-width: 991px) {
+
+    .ff-services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .ff-service-image {
+        height: 210px;
+    }
+
+    .ff-service-content {
+        padding: 24px 22px 26px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   1 card per row
+========================================= */
+
+@media (max-width: 575px) {
+
+    .ff-services-section {
+        padding: 0 0 60px;
+    }
+
+    .ff-services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ff-service-image {
+        height: 220px;
+    }
+
+    .ff-service-content {
+        padding: 23px 22px 25px;
+    }
+
+    .ff-service-content h3 {
+        min-height: 0;
+        font-size: 21px;
+    }
+
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .ff-service-card,
+    .ff-service-image img,
+    .ff-service-link,
+    .ff-service-link span {
+        transition: none;
+    }
+
+    .ff-service-card:hover {
+        transform: none;
+    }
+
+    .ff-service-card:hover .ff-service-image img {
+        transform: none;
+    }
+
+}
+/* =========================================
+   DAILY BREAKFAST & LUNCH DEALS
+========================================= */
+
+.daily-deals-section {
+    padding: 80px 0;
+    background-color: #294448;
+}
+
+.daily-deals-heading {
+    margin-bottom: 34px;
+}
+
+.daily-deals-heading .subtitle {
+    color: #f07852;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.daily-deals-heading .hero-title {
+    color: #ffffff;
+    line-height: 1.05;
+    margin-bottom: 18px;
+}
+
+.daily-deals-heading .divider-s1 {
+    width: 100px;
+    height: 3px;
+    background-color: #d9d36a;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.daily-deals-intro {
+    color: #c4d0d0;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+/* Two equal columns */
+
+.daily-deals-grid {
+    margin-top: 0;
+}
+
+.daily-deal-card {
+    height: 100%;
+    background-color: #20383b;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Food images */
+
+.daily-deal-image {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Card content */
+
+.daily-deal-content {
+    padding: 24px 26px 26px;
+    flex: 1;
+}
+
+.daily-deal-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.daily-deal-title h3 {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 0;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.deal-time {
+    display: inline-block;
+    background-color: #d9d36a;
+    color: #263d40;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+/* Individual menu items */
+
+.deal-item {
+    margin-bottom: 15px;
+}
+
+.deal-item:last-child {
+    margin-bottom: 0;
+}
+
+.deal-item-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.deal-item-heading > span:first-child {
+    flex-shrink: 0;
+}
+
+.deal-dots {
+    flex: 1;
+    min-width: 12px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.35);
+    position: relative;
+    top: -4px;
+}
+
+.deal-item-heading strong {
+    color: #d9d36a;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.deal-item p {
+    color: #c4d0d0;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 1px 0 0;
+}
+
+/* View menu button */
+
+.daily-deals-button {
+    margin-top: 38px;
+}
+
+.daily-deals-button .btn-main {
+    border: 1px solid #d9d36a;
+    color: #d9d36a;
+    background: transparent;
+}
+
+.daily-deals-button .btn-main:hover {
+    background-color: #d9d36a;
+    color: #20383b;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 991px) {
+    .daily-deal-image {
+        height: 270px;
+    }
+
+    .daily-deal-content {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .daily-deals-section {
+        padding: 55px 0;
+    }
+
+    .daily-deals-heading .hero-title {
+        font-size: 36px;
+    }
+
+    .daily-deals-intro {
+        font-size: 15px;
+    }
+
+    .daily-deal-image {
+        height: 240px;
+    }
+
+    .daily-deal-title h3 {
+        font-size: 25px;
+    }
+
+    .daily-deal-content {
+        padding: 20px;
+    }
+
+    .deal-item-heading {
+        font-size: 15px;
+    }
+
+    .daily-deals-button {
+        margin-top: 28px;
+    }
+}
+
+@media (max-width: 400px) {
+    .deal-item-heading {
+        gap: 6px;
+        font-size: 14px;
+    }
+
+    .deal-item-heading strong {
+        font-size: 16px;
+    }
+
+    .deal-time {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+}

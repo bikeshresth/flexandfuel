@@ -5,11 +5,11 @@
     <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the services at Flex & Fuel Café in Peakhurst, including dine-in, takeaway, coffee, group bookings and function room enquiries.">
-    <meta name="keywords" content="Flex and Fuel Cafe, Peakhurst cafe, function room, private events, group bookings, takeaway">
+    <meta name="description" content="Discover the services at Flex & Fuel Café in Peakhurst, including dine-in, takeaway, coffee, catering, group bookings and private functions.">
+    <meta name="keywords" content="Flex and Fuel Cafe, Peakhurst cafe, catering, function room, private events, group bookings, takeaway">
     <meta name="author" content="Flex & Fuel Café">
 
-    <!-- Existing CSS -->
+    <!-- EXISTING CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/plugins.css" rel="stylesheet" type="text/css">
     <link href="css/swiper.css" rel="stylesheet" type="text/css">
@@ -18,6 +18,9 @@
     <link href="css/coloring.css" rel="stylesheet" type="text/css">
     <link href="css/custom-gsap.css" rel="stylesheet" type="text/css">
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+
+    <!-- CUSTOM SERVICES CARD CSS -->
+    <link href="css/style.csss" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -194,26 +197,28 @@
 
 
     <!-- SERVICES GRID -->
-    <section class="pt-0">
+    <section class="ff-services-section">
         <div class="container">
 
-            <div class="row g-4">
+            <div class="ff-services-grid">
 
-                <!-- SERVICE 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="de-card h-100">
+                <!-- SERVICE 1: DINE IN -->
+                <article class="ff-service-card">
 
-                        <div class="relative overflow-hidden mb-4">
-                            <img src="images/blog/2.webp"
-                                class="w-100 hover-scale-1-1"
-                                alt="Food served at Flex and Fuel">
+                    <div class="ff-service-image">
+                        <img src="images/blog/2.webp"
+                             alt="Food served at Flex and Fuel">
+                    </div>
+
+                    <div class="ff-service-content">
+
+                        <div class="ff-service-kicker">
+                            Relax, Dine and Enjoy
                         </div>
-
-                        <div class="subtitle">Relax, Dine and Enjoy</div>
 
                         <h3>Dine-In Experience</h3>
 
-                        <p class="mb-0">
+                        <p>
                             Settle in, enjoy freshly prepared café favourites
                             and take a little time out. It's a welcoming spot
                             for breakfast, lunch or a catch-up with friends
@@ -221,131 +226,166 @@
                         </p>
 
                     </div>
-                </div>
+                </article>
 
 
-                <!-- SERVICE 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="de-card h-100">
+                <!-- SERVICE 2: TAKEAWAY -->
+                <article class="ff-service-card">
 
-                        <div class="relative overflow-hidden mb-4">
-                            <img src="images/blog/3.webp"
-                                class="w-100 hover-scale-1-1"
-                                alt="Freshly prepared café food">
+                    <div class="ff-service-image">
+                        <img src="images/blog/3.webp"
+                             alt="Freshly prepared café food">
+                    </div>
+
+                    <div class="ff-service-content">
+
+                        <div class="ff-service-kicker">
+                            Good Food, On The Go
                         </div>
-
-                        <div class="subtitle">Good Food, On The Go</div>
 
                         <h3>Takeaway</h3>
 
-                        <p class="mb-0">
+                        <p>
                             Short on time? Grab a bite or a drink to enjoy
                             on the go. Contact the team for current menu
                             options and takeaway enquiries.
                         </p>
 
                     </div>
-                </div>
+                </article>
 
 
-                <!-- SERVICE 3 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="de-card h-100">
+                <!-- SERVICE 3: COFFEE AND DRINKS -->
+                <article class="ff-service-card">
 
-                        <div class="relative overflow-hidden mb-4">
-                            <img src="images/blog/1.webp"
-                                class="w-100 hover-scale-1-1"
-                                alt="Coffee at Flex and Fuel">
+                    <div class="ff-service-image">
+                        <img src="images/blog/1.webp"
+                             alt="Coffee at Flex and Fuel">
+                    </div>
+
+                    <div class="ff-service-content">
+
+                        <div class="ff-service-kicker">
+                            Your Daily Pick-Me-Up
                         </div>
-
-                        <div class="subtitle">Your Daily Pick-Me-Up</div>
 
                         <h3>Coffee &amp; Drinks</h3>
 
-                        <p class="mb-0">
+                        <p>
                             From your coffee fix to refreshing drinks,
                             there's something to sip and enjoy.
                             Take a look at our food and drinks menus.
                         </p>
 
-                        <a href="drinks.html" class="btn-arrow text-dark mt-3">
-                            Explore Drinks
+                        <a href="drinks.html" class="ff-service-link">
+                            Explore Drinks <span aria-hidden="true">→</span>
                         </a>
 
                     </div>
-                </div>
+                </article>
 
 
-                <!-- SERVICE 4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="de-card h-100">
+                <!-- SERVICE 4: GROUP BOOKINGS -->
+                <article class="ff-service-card">
 
-                        <div class="relative overflow-hidden mb-4">
-                            <img src="images/blog/6.webp"
-                                class="w-100 hover-scale-1-1"
-                                alt="Welcoming café atmosphere">
+                    <div class="ff-service-image">
+                        <img src="images/blog/6.webp"
+                             alt="Welcoming café atmosphere">
+                    </div>
+
+                    <div class="ff-service-content">
+
+                        <div class="ff-service-kicker">
+                            Bring Everyone Together
                         </div>
-
-                        <div class="subtitle">Bring Everyone Together</div>
 
                         <h3>Group Bookings</h3>
 
-                        <p class="mb-0">
-                            Catching up with friends, family or colleagues?
-                            Get in touch with our team to discuss your
-                            group size and how we can help make your visit easy.
+                        <p>
+                            Bringing a group? We can seat private groups
+                            of up to 30 guests. Contact our team to discuss
+                            your booking.
                         </p>
 
                     </div>
-                </div>
+                </article>
 
 
-                <!-- SERVICE 5 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="de-card h-100">
+                <!-- SERVICE 5: CELEBRATIONS -->
+                <article class="ff-service-card">
 
-                        <div class="relative overflow-hidden mb-4">
-                            <img src="images/blog/4.webp"
-                                class="w-100 hover-scale-1-1"
-                                alt="Food and treats for special occasions">
+                    <div class="ff-service-image">
+                        <img src="images/blog/4.webp"
+                             alt="Food and treats for special occasions">
+                    </div>
+
+                    <div class="ff-service-content">
+
+                        <div class="ff-service-kicker">
+                            Make It a Special Day
                         </div>
-
-                        <div class="subtitle">Make It a Special Day</div>
 
                         <h3>Celebrations &amp; Special Occasions</h3>
 
-                        <p class="mb-0">
+                        <p>
                             Planning a birthday, family get-together or
                             another special occasion? Talk to us about
                             your plans and explore suitable options.
                         </p>
 
                     </div>
-                </div>
+                </article>
 
 
-                <!-- SERVICE 6 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="de-card h-100">
+                <!-- SERVICE 6: CATERING -->
+                <article class="ff-service-card">
 
-                        <div class="relative overflow-hidden mb-4">
-                            <img src="images/blog/5.webp"
-                                class="w-100 hover-scale-1-1"
-                                alt="Fresh café food">
+                    <div class="ff-service-image">
+                        <img src="images/blog/catering-platter.webp"
+                             alt="Fresh catering platter with sandwiches, cheese and antipasto">
+                    </div>
+
+                    <div class="ff-service-content">
+
+                        <div class="ff-service-kicker">
+                            Food for Your Occasion
                         </div>
 
-                        <div class="subtitle">Food for Your Occasion</div>
+                        <h3>Office and Party Catering</h3>
 
-                        <h3>Catering Enquiries</h3>
-
-                        <p class="mb-0">
-                            Have a gathering coming up? Contact us to
-                            discuss your food requirements, group size
-                            and whether we can assist with your occasion.
+                        <p>
+                            From office meetings to birthday parties,
+                            we cater for groups of 10 or more, with
+                            options to suit your budget.
                         </p>
 
+                        <h4>What we can prepare</h4>
+
+                        <ul class="ul-check">
+                            <li>Sandwich selections</li>
+                            <li>Hot food</li>
+                            <li>Antipasto platters</li>
+                            <li>Cheese platters</li>
+                            <li>Meat platters</li>
+                        </ul>
+
+                        <p>
+                            We deliver within our local area, or you can
+                            pick up your order from the cafe.
+                        </p>
+
+                        <p>
+                            Get in touch with your group size, date and
+                            budget and we'll put together an option for you.
+                        </p>
+
+                        <a href="contact.html" class="ff-service-link">
+                            Enquire About Catering
+                            <span aria-hidden="true">→</span>
+                        </a>
+
                     </div>
-                </div>
+                </article>
 
             </div>
         </div>
@@ -371,31 +411,31 @@
                     </h2>
 
                     <p class="wow fadeInUp" data-wow-delay=".2s">
-                        Looking for a place to bring your favourite people
-                        together? Ask us about function room options at
-                        Flex &amp; Fuel.
+                        From birthdays to work lunches, we host private
+                        parties and functions right here at our Peakhurst venue.
                     </p>
 
                     <p>
-                        Whether you're organising a birthday, family
-                        celebration, work get-together or a special event,
-                        we'd love to hear what you have in mind.
+                        Our private seating area fits groups of up to
+                        30 guests, so everyone can celebrate together
+                        in a relaxed, welcoming space.
                     </p>
 
+                    <h4>Choose the menu that suits your event</h4>
+
                     <ul class="ul-check mb-4">
-                        <li>Birthday celebrations and milestones</li>
-                        <li>Family gatherings and special occasions</li>
-                        <li>Work events and group get-togethers</li>
-                        <li>Food and beverage enquiry options</li>
+                        <li>Sit-down menu</li>
+                        <li>Canapés</li>
+                        <li>Buffet menu</li>
                     </ul>
 
-                    <p class="small">
-                        Room capacity, availability, packages and booking
-                        conditions can be discussed with our team.
+                    <p>
+                        Get in touch to check availability and talk through
+                        your menu, group size and booking details with our team.
                     </p>
 
                     <a href="contact.html"
-                        class="btn-main fx-slide hover-white">
+                       class="btn-main fx-slide hover-white">
                         <span>Enquire About the Function Room</span>
                     </a>
 
@@ -406,8 +446,8 @@
 
                     <div class="relative overflow-hidden rounded-1">
                         <img src="images/blog/6.webp"
-                            class="w-100 hover-scale-1-1"
-                            alt="Flex and Fuel Café space for celebrations">
+                             class="w-100 hover-scale-1-1"
+                             alt="Flex and Fuel Café private function room">
                     </div>
 
                 </div>
@@ -460,31 +500,50 @@
 
             <div class="col-lg-12">
                 <img src="images/logo-white.webp"
-                    class="logo-footer"
-                    alt="Flex & Fuel Café">
+                     class="logo-footer"
+                     alt="Flex & Fuel Café">
                 <br>
             </div>
 
             <div class="col-lg-12">
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a href="index.html">Home</a></li>
-                    <li class="list-inline-item"><a href="menu-style-2.html">Menu</a></li>
-                    <li class="list-inline-item"><a href="about.html">About</a></li>
-                    <li class="list-inline-item"><a href="gallery.html">Gallery</a></li>
-                    <li class="list-inline-item"><a href="services.html">Services</a></li>
-                    <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                    <li class="list-inline-item">
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a href="menu-style-2.html">Menu</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a href="services.html">Services</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
 
             <div class="col-lg-12">
                 <div class="social-icons">
+
                     <a href="#" aria-label="Facebook">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
 
                     <a href="https://www.instagram.com/flexandfuelsydney/"
-                        target="_blank" rel="noopener"
-                        aria-label="Instagram">
+                       target="_blank"
+                       rel="noopener"
+                       aria-label="Instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
@@ -495,6 +554,7 @@
                     <a href="#" aria-label="YouTube">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
+
                 </div>
             </div>
 
