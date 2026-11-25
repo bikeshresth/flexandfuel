@@ -11580,3 +11580,575 @@ width: auto;
         padding: 5px 8px;
     }
 }
+
+
+/* =========================================================
+   FLEX & FUEL CAFE - SERVICES PAGE CUSTOM STYLES
+   File: css/services-custom.css
+   ========================================================= */
+
+
+/* =========================
+   GENERAL SERVICES STYLING
+   ========================= */
+
+.ff-services-intro {
+    padding: 85px 0 45px;
+    background: #fff;
+}
+
+.ff-services-intro .subtitle,
+.ff-occasion-heading .ff-service-kicker {
+    color: #28615F;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.ff-services-intro h2,
+.ff-occasion-heading h2 {
+    color: rgba(32, 69, 72, 1);
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.ff-services-intro p,
+.ff-occasion-heading p {
+    color: #657477;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   MAIN SERVICE SECTION
+   ========================= */
+
+.ff-services-section {
+    padding: 45px 0 100px;
+    background: #fff;
+}
+
+.ff-services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+    align-items: stretch;
+}
+
+
+/* =========================
+   MAIN SERVICE CARDS
+   ========================= */
+
+.ff-service-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid rgb(230, 216, 191);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(32, 69, 72, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 0;
+}
+
+.ff-service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(32, 69, 72, 0.15);
+    border-color: #28615F;
+}
+
+
+/* =========================
+   SERVICE CARD IMAGE
+   ========================= */
+
+.ff-service-image {
+    position: relative;
+    height: 280px;
+    width: 100%;
+    overflow: hidden;
+    background: #eee;
+}
+
+.ff-service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.ff-service-card:hover .ff-service-image img {
+    transform: scale(1.05);
+}
+
+.ff-image-label {
+    position: absolute;
+    bottom: 20px;
+    left: 22px;
+    background: #FC7753;
+    color: #fff;
+    padding: 9px 15px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+}
+
+
+/* =========================
+   SERVICE CARD CONTENT
+   ========================= */
+
+.ff-service-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 35px 34px 38px;
+}
+
+.ff-service-kicker {
+    display: block;
+    color: #28615F;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.ff-service-content h3 {
+    color: rgba(32, 69, 72, 1);
+    font-size: 29px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.ff-service-content p {
+    color: #657477;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.ff-service-content .ff-service-lead {
+    color: #456164;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   CARD DIVIDER
+   ========================= */
+
+.ff-service-divider {
+    width: 55px;
+    height: 3px;
+    background: #28615F;
+    margin: 13px 0 24px;
+}
+
+
+/* =========================
+   CARD SUBHEADINGS
+   ========================= */
+
+.ff-service-content h4 {
+    color: rgba(32, 69, 72, 1);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+
+
+/* =========================
+   SERVICE LIST
+   ========================= */
+
+.ff-service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+}
+
+.ff-service-list li {
+    position: relative;
+    color: #526568;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 9px 0 9px 28px;
+    border-bottom: 1px solid #eee9df;
+}
+
+.ff-service-list li:last-child {
+    border-bottom: none;
+}
+
+.ff-service-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    color: #28615F;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+/* =========================
+   HIGHLIGHTED SERVICE NOTE
+   ========================= */
+
+.ff-service-note {
+    background: #F5F1E9;
+    border-left: 3px solid #FC7753;
+    border-radius: 0 6px 6px 0;
+    padding: 19px 20px;
+    margin: 8px 0 22px;
+}
+
+.ff-service-note h5 {
+    color: rgba(32, 69, 72, 1);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.ff-service-note p {
+    color: #657477;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   FUNCTION ROOM CAPACITY
+   ========================= */
+
+.ff-capacity {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 20px;
+    margin: 0 0 25px;
+    background: #F5F1E9;
+    border: 1px solid rgb(230, 216, 191);
+    border-radius: 8px;
+}
+
+.ff-capacity-number {
+    color: #28615F;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.ff-capacity-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ff-capacity-text strong {
+    color: rgba(32, 69, 72, 1);
+    font-size: 16px;
+}
+
+.ff-capacity-text span {
+    color: #657477;
+    font-size: 13px;
+}
+
+
+/* =========================
+   SERVICE BUTTON
+   ========================= */
+
+.ff-service-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    margin-top: auto;
+    padding: 16px 20px;
+    background: #FC7753;
+    border: 1px solid #FC7753;
+    border-radius: 5px;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+
+.ff-service-btn span {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.ff-service-btn:hover {
+    background: rgba(32, 69, 72, 1);
+    border-color: rgba(32, 69, 72, 1);
+    color: #fff !important;
+}
+
+.ff-service-btn:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   OTHER SERVICES SECTION
+   ========================= */
+
+.ff-occasion-section {
+    padding: 95px 0 100px;
+    background: rgb(230, 216, 191);
+}
+
+.ff-occasion-heading {
+    max-width: 760px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.ff-occasion-heading h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   GROUP BOOKING / CELEBRATION
+   ========================= */
+
+.ff-occasion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.ff-occasion-card {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    background: #fff;
+    border: 1px solid rgba(32, 69, 72, 0.15);
+    border-radius: 10px;
+    padding: 32px;
+    box-shadow: 0 5px 20px rgba(32, 69, 72, 0.06);
+    transition: all 0.3s ease;
+}
+
+.ff-occasion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(32, 69, 72, 0.12);
+    border-color: #28615F;
+}
+
+.ff-occasion-icon {
+    flex-shrink: 0;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(252, 119, 83, 0.13);
+    color: #FC7753;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.ff-occasion-content h3 {
+    color: rgba(32, 69, 72, 1);
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.ff-occasion-content p {
+    color: #657477;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.ff-occasion-link {
+    display: inline-block;
+    color: #28615F !important;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+.ff-occasion-link:hover {
+    color: #FC7753 !important;
+}
+
+
+/* =========================
+   CONTACT CTA SECTION
+   ========================= */
+
+.ff-contact-section {
+    padding: 90px 0;
+    background: rgba(32, 69, 72, 1);
+    color: #fff;
+}
+
+.ff-contact-section .subtitle {
+    color: rgb(230, 216, 191);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.ff-contact-section h2 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.ff-contact-section p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   TABLET RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 991px) {
+
+    .ff-services-grid {
+        gap: 22px;
+    }
+
+    .ff-service-content {
+        padding: 28px 24px 30px;
+    }
+
+    .ff-service-content h3 {
+        font-size: 25px;
+    }
+
+    .ff-service-image {
+        height: 230px;
+    }
+
+    .ff-occasion-card {
+        padding: 25px;
+        gap: 17px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 767px) {
+
+    .ff-services-intro {
+        padding: 60px 0 30px;
+    }
+
+    .ff-services-intro h2,
+    .ff-occasion-heading h2 {
+        font-size: 29px;
+    }
+
+    .ff-services-section {
+        padding: 30px 0 65px;
+    }
+
+    .ff-services-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .ff-service-image {
+        height: 250px;
+    }
+
+    .ff-service-content {
+        padding: 27px 23px 30px;
+    }
+
+    .ff-service-content h3 {
+        font-size: 25px;
+    }
+
+    .ff-occasion-section {
+        padding: 65px 0;
+    }
+
+    .ff-occasion-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ff-occasion-card {
+        padding: 24px 20px;
+    }
+
+    .ff-contact-section {
+        padding: 65px 0;
+    }
+
+    .ff-contact-section h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE SCREENS
+   ========================= */
+
+@media (max-width: 420px) {
+
+    .ff-service-image {
+        height: 210px;
+    }
+
+    .ff-service-content {
+        padding: 23px 18px 25px;
+    }
+
+    .ff-service-content h3 {
+        font-size: 23px;
+    }
+
+    .ff-occasion-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .ff-capacity-number {
+        font-size: 36px;
+    }
+
+}
